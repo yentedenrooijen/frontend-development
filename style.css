@@ -1,0 +1,725 @@
+/* Algemeen (mobiel) */
+
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    color: #282828;
+    display: flex;
+    flex-direction: column;
+}
+
+ol, ul {
+   list-style: none;
+}
+
+body > p + p {
+    margin-bottom: 1em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 1.3em;
+    font-weight: 200;
+    text-shadow: 1px 1px #696A6A;
+}
+
+h2 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+h4 {
+    font-weight: 700;
+}
+
+/* Header */
+
+body > header {
+    background-color: #FF9933;
+    box-shadow: 2px 5px 2px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+body > header > picture img {
+    position: absolute;
+    left: 1%;
+    top: 5%;
+}
+
+body > header h1 {
+    font-weight: bold;
+    text-align: right;
+    margin: 0;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-right: 1em;
+}
+
+body > header p:first-of-type {
+    display: none;
+    text-align: center;
+    margin: 0;
+    padding-left: 5em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+body > header p{
+    display:none;
+}
+
+/* Navigatie */
+
+body > header nav input {
+    display: none;
+}
+
+body > header nav label:hover {
+    cursor: pointer;
+}
+
+body > header nav ul li a {
+    display: block;
+    width: 70%;
+    line-height: 20%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 1px solid #656565;
+    color: #efefef;
+    background-color: rgba(0,0,0,0.2);
+}
+
+/* Profiel */
+
+body > header p[class="to-profile"] {
+    text-align: right;
+    font-size: 80%;
+    margin-right: 2em;
+}
+
+/* Zoeken */
+
+body > header form {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+body > header form label {
+    font-size: 0;
+}
+
+body > header form input {
+    -webkit-appearance: none;
+    appearance: none;
+    display: block;
+    height: 3em;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: .2rem;
+    width: 80%;
+    margin: 0 auto;
+    border: none;
+    padding: 0 1em;
+    color: #ffffff;
+}
+
+body > header form input::-webkit-input-placeholder {
+    padding: 0 1em;
+    color: #ffffff;
+    text-align: left;
+}
+
+body > header form button {
+    display: none;
+    font-weight: bold;
+}
+
+/* Main article */
+
+body > main article {
+    padding-top: 0em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 1em;
+    font-size: 130%;
+    display: flex;
+    flex-direction: column;
+    line-height: 120%;
+}
+
+body > main article footer {
+    order: 1;
+    margin-top: 2rem;
+    padding: 1rem 0 0 0;
+    border-top: 1px solid;
+}
+
+img.beroepen {
+        float: inherit;
+        margin-right: 10px;
+        border-radius: 10px;
+        width: 350px;
+}
+
+    /*Video*/
+    article section video {
+        display: inline-block;
+        width: 70%;
+    }
+
+/* Andere artikelen */
+
+body > section {
+    font-size: 120%;
+    color: #FBFBFB;
+    background-color: #404040;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+    padding-left: 1em;
+    padding-top: 2em;
+    padding-right: 1em;
+}
+
+body > section a {
+    color: #FFA347;
+    display: inline-block;
+
+}
+
+section > ul {
+    padding-left: 0em;
+    padding:
+}
+
+/* ---Check ook beneden---*/
+body > section > h2 {
+    position: relative;
+    font-size: 120%;
+    left: 1rem;
+    display: inline-block;
+}
+
+body > section article {
+    display: inline-block;
+    vertical-align: text-top;
+    font-size: 80%;
+    width: 15rem;
+    margin-right: 2rem;
+}
+
+/* Laatste mededelingen & uitagenda */
+
+body > aside {
+    background-color: #B8B8B8;
+    padding: 1em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: solid 1px;
+}
+
+body > aside h2 a {
+    text-shadow: 1px 1px rgba(0,0,0,0.4);
+    color: black;
+}
+
+body > aside section {
+    padding: 1em;
+    flex-basis: 25em;
+    flex-grow: 1;
+}
+
+.mededelingen:nth-of-type(1) {
+    border-right: solid 1px;
+    margin-right: 1em;
+}
+
+body > aside h3 {
+    font-weight: bolder;
+}
+
+
+/* Formulier */
+
+body > main > form{
+    width: 100%;
+}
+
+body > main > form > fieldset {
+    border: solid, lightgrey;
+    border-radius: 25px;
+    margin-bottom: 1em;
+}
+input[type="checkbox"] {
+    box-shadow: none;
+    display: inline;
+}
+
+legend {
+    padding-bottom: 0.5em;
+    border-radius: 25px;
+    font-size: 1.2em;
+}
+
+main > form input, select, textarea{
+    background-color: #F8F8F8;
+    display: block;
+    width: 100%;
+    font-size: 1em;
+    border-radius: 5px;
+    box-shadow: inset .1em .1em .2em rgba(0,0,0,.5);
+    border: none;
+    margin: .3em 0;}
+
+
+input[type="radio"] {
+box-shadow: none;
+width: inherit;}
+
+input[type="submit"] {
+width: 10em;
+float: right;}
+
+.hidden{
+display: none;}
+
+.show{
+display: block;}
+
+
+/* Footer */
+
+body > footer {
+    background-color: #FFC182;
+    border: solid 1px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+}
+
+body > footer section {
+    padding: 1rem;
+}
+
+body > footer a:visited{
+    color: #656565;
+}
+
+body > footer a:hover{
+    color: white;
+}
+
+/* Sitemap */
+
+body > footer #sitemap > ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+body > footer #sitemap > ul li {
+    flex-basis: 15em;
+}
+
+body > footer #sitemap > ul > li > a {
+    font-size: 110%;
+    font-weight: 800;
+    color: black;
+}
+
+body > footer #sitemap > ul > li a:hover {
+    color: white;
+}
+
+/* Contact */
+
+body > footer #contact p {
+    margin-bottom: .2rem;
+}
+
+/* Feedback */
+
+body > footer #feedback a{
+    display: inline;
+    width: 100%;
+    margin-left: 2rem;
+    height: 4rem;
+    text-align: left;
+    font-size: 1em;
+    color: #ffffff;
+}
+
+/*-------------- Responsive ---------------*/
+
+/*Tablet*/
+
+@media screen and (min-width: 50em){
+    body > aside section:first-child {
+        margin-right: 2rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border: none;
+    }
+
+    body > header h1 {
+        text-align: center;
+    }
+
+    body > header p:first-of-type {
+        display: inline-block;
+    }
+
+    h1 {
+    font-size: 2em;
+    font-weight: 200;
+    text-shadow: 1px 1px #696A6A;
+}
+
+    body > main {
+        font-size: 110%;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    body > header > picture img {
+    position: absolute;
+    top: 0px;
+}
+    body > header form {
+    display: inline-block;
+    }
+
+    body > header nav ul li a {
+    width: 70%;
+    }
+
+        /*Video*/
+    article section video {
+        display: inline-block;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 58em) {
+
+    body {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+        body > main {
+        padding-left: 5em;
+        padding-right: 5em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    body > header {
+        flex-basis: 100%;
+        z-index: 15;
+        order: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Navigatie */
+    body > header nav {
+        order: 1;
+    }
+
+    body > header nav ul {
+        transition: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-basis: 100%;
+    }
+
+    body > header nav ul li {
+        margin-left: 2rem;
+        flex-grow: 1;
+    }
+
+    body > header nav ul li a {
+        width: 80%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        border-top: none;
+        height: 2em;
+        line-height: 2em;
+        color: #ffffff;
+        background-color: #000000;
+        border-radius: 20px;
+    }
+
+    body > header nav ul li a:hover {
+        width: 100%;
+        background-color: #8D9191;
+        box-shadow: 2px 2px 3px white;
+        -webkit-transition: ease 1s;
+        transition: ease 1s;
+    }
+
+    body > header nav ul li:nth-child(2) a {
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    /* Zoeken */
+    body > header form {
+        display: inline-block;
+        text-align: center;
+        width: 70%;
+        margin-left: 13em;
+    }
+
+    body > header form input {
+        width: 75%;
+        display: inline-block;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        float: left;
+        transition: .3s ease;
+    }
+
+    body > header form input:focus {
+        background-color: rgba(0,0,0,0.5);
+        outline: 0;
+    }
+
+    body > header form button {
+        display: inline-block;
+        text-align: center;
+        width: 25%;
+        border: none;
+        background-color: #000000;
+        height: 3em;
+        float: right;
+        border-top-right-radius: .2em;
+        border-bottom-right-radius: .2em;
+        color: #ffffff;
+    }
+
+    body > header form button:hover {
+        box-shadow: 0 0 3px 3px white;
+        cursor: pointer;
+    }
+
+    /*Algemeen*/
+    body > main {
+        font-size: 100%;
+        flex-grow: 1;
+        flex-basis: 20em;
+        order: 2;
+    }
+
+    body > section {
+        flex-basis: 16em;
+        flex-shrink: 0;
+        z-index: 1;
+        order: 1;
+    }
+
+    body > section > h2 {
+        transform: none;
+        position: static;
+        display: block;
+        width: 100%;
+        text-align: left;
+        font-weight: 500;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-bottom: 0;
+    }
+
+    body > section article {
+        display: block;
+        vertical-align: text-top;
+        width: 100%;
+        padding: 1rem;
+        border-bottom: 2px dotted #696A6A;
+    }
+
+    body > aside {
+        order: 3;
+    }
+
+    body > footer {
+        order: 4;
+    }
+
+    img.beroepen {
+        width: 500px;
+}
+
+
+/*Desktop*/
+
+@media screen and (min-width: 68em) {
+
+    body > main {
+        font-size: 100%;
+        padding-left: 5em;
+        padding-right: 5em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    body > footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    body > footer #about, body > footer #contact, body > footer #search {
+        flex-grow: 1;
+        flex-basis: 20em;
+    }
+
+    body > footer #sitemap, body > footer #feedback, body > footer #credits {
+        flex-basis: 100%;
+    }
+
+    body > footer #feedback a:hover {
+        -webkit-transform:rotate(20deg);
+        transform:rotate(20deg);
+        -webkit-transition: ease 1s;
+        transition: ease 1s;
+    }
+
+    img.beroepen {
+        width: 600px;
+    }
+
+    img.beroepen:hover {
+        width: 800px;
+        -webkit-transform: rotate(5deg);
+        transform: rotate(5deg);
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+        -webkit-transition: all ease 1.5s;
+        transition: all ease 1.5s;
+    }
+
+
+}
+
+    /* Grote resolutie */
+
+
+@media (min-width: 90em) {
+body{
+font-size: 1.4em;
+line-height: 1.4em;}
+
+button{
+font-size: .7em;}
+
+input[type="radio"] {
+width: 20px;
+height: 20px;
+border-radius: 10px;
+outline: none;
+box-shadow: inset 0 0 0 2px #FFF;}
+
+}
+
+
+@media (min-width: 100em) {
+
+    body > header form input {
+        width: 75%;
+        height: 4.2em;
+        display: inline-block;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        float: left;
+        transition: .3s ease;
+        line-height: 1em;
+    }
+
+body > header form input::-webkit-input-placeholder {
+    font-size: 130%;
+padding: 0 1em;
+color: #ffffff;
+text-align: left;
+}
+
+input[type="radio"] {
+width: 30px;
+height: 30px;
+border-radius: 20px;
+outline: none;
+box-shadow: inset 0 0 0 2px #FFF;}
+
+@media (min-width: 125em) {
+
+    body > header form input {
+        width: 75%;
+        height: 5.6em;
+        display: inline-block;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        float: left;
+        transition: .3s ease;
+        line-height: 2em;
+    }
+
+body > header form input::-webkit-input-placeholder {
+color: #ffffff;
+text-align: left;
+font-size: 200%;
+padding: 0em;
+}
+
+body{
+font-size: 2em;}
+
+button{
+width: 5em;}
+
+input[type="radio"] {
+width: 40px;
+height: 40px;
+border-radius: 30px;
+outline: none;
+box-shadow: inset 0 0 0 2px #FFF;}
+
+@media (min-width: 220em) {
+body{
+font-size: 3em;}
+
+button{
+width: 7em;}
+
+        body > header form input {
+        width: 75%;
+        height: 5.5em;
+        display: inline-block;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        float: left;
+        transition: .3s ease;
+        line-height: 1em;
+    }
+
+body > header form input::-webkit-input-placeholder {
+    font-size: 300%;
+padding: 0 1em;
+color: #ffffff;
+text-align: left;
+}
+
+@media (min-width: 250em) {
+body{
+font-size: 4em;
+}
